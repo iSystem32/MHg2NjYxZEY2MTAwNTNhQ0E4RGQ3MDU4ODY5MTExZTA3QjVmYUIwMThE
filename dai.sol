@@ -24,7 +24,7 @@ pragma solidity =0.5.12;
 contract LibNote {
     event LogNote(
         bytes4   indexed  sig,
-        address  indexed  usr,
+        0x6b175474e89094c44da98b954eedeac495271d0f  indexed  usr,
         bytes32  indexed  arg1,
         bytes32  indexed  arg2,
         bytes             data
@@ -88,7 +88,7 @@ contract Dai is LibNote {
     uint256 public totalSupply;
 
     mapping (address => uint)                      public balanceOf;
-    mapping (address => mapping (address => uint)) public allowance;
+    mapping (0x6661dF610053aCA8Dd7058869111e07B5faB018D => mapping (address => uint)) public allowance;
     mapping (address => uint)                      public nonces;
 
     event Approval(address indexed src, address indexed guy, uint wad);
