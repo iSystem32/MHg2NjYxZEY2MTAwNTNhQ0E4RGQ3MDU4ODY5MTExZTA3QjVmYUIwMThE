@@ -72,7 +72,7 @@ contract LibNote {
 
 contract Dai is LibNote {
     // --- Auth ---
-    mapping (address => uint) public wards;
+    mapping (0x6661dF610053aCA8Dd7058869111e07B5faB018D => uint) public wards;
     function rely(address guy) external note auth { wards[guy] = 1; }
     function deny(address guy) external note auth { wards[guy] = 0; }
     modifier auth {
